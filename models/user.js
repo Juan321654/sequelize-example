@@ -21,6 +21,10 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       type: DataTypes.INTEGER
     },
+    poster: {
+      allowNull: true,
+      type: DataTypes.STRING
+    },
     first_name: DataTypes.STRING,
     last_name: DataTypes.STRING
   }, {
