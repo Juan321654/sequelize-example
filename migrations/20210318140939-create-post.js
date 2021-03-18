@@ -11,8 +11,8 @@ module.exports = {
       user_id: {
         type: Sequelize.INTEGER,
         references: {
-          // references the table name not the model ?
-          model: 'users',
+          // references the table name not the model
+          model: 'Users', //table name is capitalized
           key: 'user_id'
         }
       },
