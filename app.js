@@ -8,12 +8,13 @@ app.use(express.json())
 
 ////////CREATE USER //////////////////////
 // POST >  http://localhost:3000/users
-//  {
-//     "user": {
+// {
+//   "user": {
 //       "first_name": "juan",
-//       "last_name": "camacho"
-//      }
-//  }
+//       "last_name": "camacho",
+//       "poster": "this is the poster"
+//   }
+// }
 app.post('/users',  async(req, res) => {
   const { user } = req.body
   try {
