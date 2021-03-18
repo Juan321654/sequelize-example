@@ -23,8 +23,10 @@ module.exports = {
         type: Sequelize.DATE
       }
     });
+    // await queryInterface.renameTable('users', 'owners')
   },
   down: async (queryInterface, Sequelize) => {
     await queryInterface.dropTable('users');
+    // await queryInterface.renameTable('owners', 'users');
   }
 };
