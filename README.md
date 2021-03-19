@@ -10,7 +10,7 @@ https://medium.com/@andrewoons/how-to-define-sequelize-associations-using-migrat
 
 ## tips
 
-- When doing migration files you have to do one at the time ex: 
+- When making migration files, you have to do one query at the time. ex: 
 ```
 'use strict';
 module.exports = {
