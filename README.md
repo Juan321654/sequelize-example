@@ -1,5 +1,11 @@
+## npm
+- npm init -y
+- npm i sequelize sequelize-cli express sqlite3
+- npm i -D nodemon > "start": "nodemon app.js"
+
 ## sequelize commands
-- npx sequelize-cli init
+- npx sequelize-cli init > in the config.json file > "dialect": "sqlite",
+    "storage": "users.db"
 - npx sequelize-cli model:generate --name User --attributes first_name:string,last_name:string,email:string --underscored
 - npx sequelize-cli db:migrate:undo:all
 - npx sequelize-cli db:migrate
